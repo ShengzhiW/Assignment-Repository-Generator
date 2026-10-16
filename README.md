@@ -187,7 +187,7 @@ All settings are in the `CONFIG` block at the top of `Code.gs`.
 | `ORG_DISPLAY_NAME` | `'Your Course'` | How the organization is named in the "not a member yet" email. |
 | `PERMISSION` | `'push'` | Access each student gets on their repository: `'pull'` (Read), `'triage'`, `'push'` (Write), `'maintain'` or `'admin'`. Write lets students push but not change visibility, delete the repository or add people. |
 | `REQUIRE_ORG_MEMBERSHIP` | `true` | `true`: only org members get a repository. `false`: anyone with a GitHub account does; non-members are added as outside collaborators and must accept an invitation. |
-| `ALLOWED_USERNAMES` | `[]` | Optional roster of GitHub usernames (not case sensitive). Empty allows anyone who can submit the form. |
+| `ALLOWED_USERNAMES` | `[]` | Optional roster of GitHub usernames (not case sensitive). Empty allows anyone who can submit the form. Typically left empty if `REQUIRE_ORG_MEMBERSHIP` is `true` |
 | `EXCLUDE_TEMPLATES` | `[]` | Template repository names to leave out of the dropdown. |
 | `USERNAME_QUESTION` | `'GitHub username'` | Title of the username question. |
 | `ASSIGNMENT_QUESTION` | `'Select Your Assignment'` | Title of the assignment dropdown. The dropdown sync needs an exact match; if it finds none, it adds a new question. |
