@@ -4,6 +4,9 @@ A Google Apps Script that replaces GitHub Classroom's assignment invitation link
 
 There's no assignment list to maintain. Any template repository in your organization shows up in the form automatically, and unticking it closes the assignment.
 
+<img width="669" height="869" alt="Screenshot 2026-10-16 at 4 08 27 PM" src="https://github.com/user-attachments/assets/b9cbb9a1-35b5-4fd5-a32b-0662c67ed018" />
+
+
 ## How it works
 
 ### Assignments come from GitHub
@@ -131,8 +134,13 @@ When authorizing, the script asks to manage your forms, connect to an external s
 
 1. Run **`installTrigger`**. It installs two triggers, one for form submissions and one on a timer that refreshes the dropdown, then refreshes the dropdown once. Running it again is safe; it replaces the earlier triggers.
 2. Reload the form editor and check the refresh menu. Click the puzzle-piece icon in the top toolbar (next to the palette and preview icons) and choose **Repo tools**. A window titled with your Apps Script project's name opens; click **Refresh assignments** in it. It rebuilds the dropdown from GitHub and then shows a message saying either "Assignments updated" or "Already up to date", with the list of open assignments. After an update, reload the form preview to see the new choices.
+<img width="189" height="143" alt="Screenshot 2026-10-16 at 4 11 57 PM" src="https://github.com/user-attachments/assets/ecdb0fa4-3dd1-43be-a763-cf1f45ee929d" />
+<img width="291" height="137" alt="Screenshot 2026-10-16 at 4 12 05 PM" src="https://github.com/user-attachments/assets/3fc239aa-d8a9-48cd-b834-0aadedf79367" />
+<img width="475" height="281" alt="Screenshot 2026-10-16 at 4 12 18 PM" src="https://github.com/user-attachments/assets/3fbeadc1-8c46-4f74-b039-406cce341325" />
+
 3. Submit the form yourself from the preview (the eye icon) and check that the repository and the email arrive.
 4. Share the form's link with students.
+
 
 The triggers run as you. Emails come from your Google account, and provisioning stops if your account loses access to the form or you revoke the script's authorization.
 
